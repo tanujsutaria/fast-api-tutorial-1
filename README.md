@@ -1,1 +1,3 @@
-# fast-api-tutorial-1
+# fast-api-1
+
+#Running the app creates the base postgres db
