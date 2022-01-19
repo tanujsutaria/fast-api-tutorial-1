@@ -2,3 +2,4 @@
 
 #Running the app creates the base postgres db
 #TO-DO: Write how-to containerize and run
+#TO-DO: Deploy on heroku
