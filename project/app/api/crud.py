@@ -1,6 +1,6 @@
 from app.models.pydantic import SummaryPayloadSchema
 from app.models.tortoise import TextSummary
-from typing import Union
+from typing import Union, List
 
 
 async def post(payload: SummaryPayloadSchema) -> int:
@@ -16,3 +16,7 @@ async def get(id: int) -> Union[dict, None]:
     if summary:
         return summary
     return None
+
+async def get_all() -> List:
+    summaries = await TextSummary.all().values()
+    return summaries
